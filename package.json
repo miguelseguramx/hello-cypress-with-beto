@@ -1,0 +1,15 @@
+{
+  "name": "cypress-testing",
+  "version": "1.0.0",
+  "description": "Fast test with cypress",
+  "main": "index.js",
+  "author": "Miguel Segura <miguelseguramx@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "test:open": "cypress open",
+    "test:run": "cypress run"
+  },
+  "dependencies": {
+    "cypress": "^6.8.0"
+  }
+}

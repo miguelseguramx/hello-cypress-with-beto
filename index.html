@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+  <title>Hola Mundo con Cypress</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      height: 100vh;
+      padding: 300px;
+    }
+    button {
+      margin-top: 16px;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <h1 id="name" class="title is-3"></h1>
+  </div>
+  <div class="box">
+    <input type="text" class="input is-primary is-large" placeholder="Introduce tu nombre" id="name-input" />
+    <button class="button is-primary is-large is-fullwidth" id="name-btn">Saludame</button>
+  </div>
+  <script>
+    const input = document.querySelector('#name-input')
+    const button = document.querySelector('#name-btn')
+    const name = document.querySelector('#name')
+    button.addEventListener('click', () => {
+      console.log('Soy clickeado')
+      console.log(name)
+      name.innerHTML = `Hola, Bienvenido a Cypress ${input.value}`
+    })
+  </script>
+</body>
+</html>
