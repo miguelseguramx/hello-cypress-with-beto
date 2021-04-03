@@ -1,14 +1,28 @@
 {
-  "name": "cypress-testing",
+  "name": "hello-cypress",
   "version": "1.0.0",
-  "description": "Fast test with cypress",
+  "description": "Hello Cypress with a simple excersise and a good friend",
+  "keywords": [
+    "cypress"
+  ],
   "main": "index.js",
-  "author": "Miguel Segura <miguelseguramx@gmail.com>",
-  "license": "MIT",
+  "author": "Miguel Segura <miguelseguramx@gmail.com> (https://twitter.com/MiguelSeguraMX)",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/miguelseguramx/hello-cypress-with-beto"
+  },
+  "bugs": {
+    "url" : "https://github.com/miguelseguramx/hello-cypress-with-beto/issues",
+    "email" : "miguelseguramx@gmail.com"
+  },
   "scripts": {
     "test:open": "cypress open",
     "test:run": "cypress run"
   },
+  "engines": {
+    "node": ">= 15.10.0"
+  },
+  "license": "MIT",
   "dependencies": {
     "cypress": "^6.8.0"
   }
